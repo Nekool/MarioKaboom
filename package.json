@@ -2,7 +2,8 @@
   "name": "mariokaboom",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
+  "type": "module",
   "scripts": {
     "start": "parcel src/index.html -p 8000",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "kaboom": "^2000.1.8"
+    "kaboom": "^2000.1.8",
+    "parcel-bundler": "^1.12.5"
+  },
+  "staticFiles": {
+    "staticPath": ["./src/static"]
+  },
+  "devDependencies": {
+    "parcel-plugin-static-files-copy": "^2.6.0"
   }
 }
